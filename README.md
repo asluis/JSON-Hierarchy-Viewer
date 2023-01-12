@@ -8,35 +8,35 @@ The datasource will need to be manually modified (associated API keys / auth wil
 # Example
 
 If the json structure is as follows:
-{
-  "kind": "Listing",
-  "data": {
-    "after": "t3_10901qv",
-    "dist": 25,
-    "modhash": "45sg4a8umpae36e46cb95325bd3ec86322e98010df4eb1a646",
-    "geo_filter": "",
-    "children": [
-      {"kind": "t3"}.
-      {"kind":"t4"},
-      {"loop":"t"}
-    ],
-    {"test":"true"}
-  }
-}
+{<br/>
+  "kind": "Listing",<br/>
+  "data": {<br/>
+    "after": "t3_10901qv",<br/>
+    "dist": 25,<br/>
+    "modhash": "45sg4a8umpae36e46cb95325bd3ec86322e98010df4eb1a646",<br/>
+    "geo_filter": "",<br/>
+    "children": [<br/>
+      {"kind": "t3"}.<br/>
+      {"kind":"t4"},<br/>
+      {"loop":"t"}<br/>
+    ],<br/>
+    {"test":"true"}<br/>
+  }<br/>
+}<br/>
 
 ###The output from this script will be:
 
-kind
-data
-  after
-  dist
-  modhash
-  geo_filter
-  children
-    kind
-    kind
-    loop
-  test
+kind<br/>
+data<br/>
+  after<br/>
+  dist<br/>
+  modhash<br/>
+  geo_filter<br/>
+  children<br/>
+    kind<br/>
+    kind<br/>
+    loop<br/>
+  test<br/>
   
   
   
