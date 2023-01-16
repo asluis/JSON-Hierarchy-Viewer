@@ -1,5 +1,4 @@
 import requests
-import json
 import argparse
 
 """
@@ -19,7 +18,7 @@ api = "https://reddit.com/r/popular.json?sort=top"
 """ Done so to change default user agent. Since none is defined, requests library uses its own,
 which Reddit API interprets as one user for everyone trying to use default user agent and
 rate limits it. User agent can be changed to anything."""
-headers = {'User-agent': 'Youtube_Video_Automator/0.0.1'}
+headers = {'User-agent': 'JSON_Hierarchy_Viewer/0.0.1'}
 
 def get_data():
     response = requests.get(api, headers=headers)
@@ -37,7 +36,7 @@ def simple_print(data, indents):
         return
      
     out = ""
-    for i in range(0, indents):
+    for _ in range(0, indents):
          out = out + "  "
 
     if type(data) is dict:
