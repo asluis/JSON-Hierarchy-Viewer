@@ -8,12 +8,13 @@ only the keys in the json are included in the hierarchy.
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--equalLists', dest='equal_lists', type=str, help='Determines whether all lists in the json object will have the same embedded JSON hierarchy. fetch,py will assume all lists are the same by default. To change this, specify any nonzero number to this parameter.')
+parser.add_argument('--api', dest='api', type=str, help='The API endpoint of the resource you are trying to fetch a JSON object from. If not specified, the following api endpoint will be used for testing purposes: https://reddit.com/r/popular.json?sort=top')
 
 args = parser.parse_args()
 equal_lists = args.equal_lists or 0
 
 
-api = "https://reddit.com/r/popular.json?sort=top"
+api = args.api or  "https://reddit.com/r/popular.json?sort=top"
 
 """ Done so to change default user agent. Since none is defined, requests library uses its own,
 which Reddit API interprets as one user for everyone trying to use default user agent and
