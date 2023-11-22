@@ -48,7 +48,7 @@ def simple_print(data, indents):
     else:
         for val in data:
             if type(val) is dict:
-                simple_print(data[0], indents + 1)
+                simple_print(data[data.index(val)], indents + 1)
             # Ensures only one element from list is processed since they're all the same if equal_lists == 0
             if equal_lists == 0:
                 return
