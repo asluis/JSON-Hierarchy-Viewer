@@ -24,7 +24,7 @@ If the json structure is as follows:
   }<br/>
 }<br/>
 
-###The output from this script will be:
+### The output from this script will be:
 
 kind<br/>
 data<br/>
