@@ -32,7 +32,7 @@ If the json structure is as follows:
 3) Run the python script to view its sample output: python3 fetch.py
 4) Read the help options for an understanding of the parameters you can use: python3 fetch.py -h
 
-###The output from this script will be:
+### The output from this script will be:
 
 kind<br/>
 data<br/>
